@@ -122,9 +122,10 @@ The CLI creates the directory structure, calls the SaaS API and saves the genera
 
 ```mermaid
 graph LR
-    PR[Pull Request] --> Build[Build & Test]
-    Build -->|JUnit / JaCoCo| Coverage[Coverage Report]
-    Coverage --> Docker[Docker build & push&nbsp;(optional)]
+    PR["Pull Request"] --> Build["Build & Test"]
+    Build -->|"JUnit / JaCoCo"| Coverage["Coverage Report"]
+    Coverage --> Docker["Docker build & push<br/>(optional)"]
+
 ```
 
 *(See the full example in `.github/workflows/ci.yml`.)*
