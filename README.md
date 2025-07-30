@@ -56,32 +56,39 @@ graph TD
 | 🚀 Caffeine Cache     | —                     | —                              |
 
 ---
-
+## 📂 Project Structure
+```text
 
 ai-test-generator-pro
-├── pom.xml (parent pom)
+├── pom.xml                         # parent POM
 ├── README.md
 ├── server
-│ ├── pom.xml
-│ └── src/main/java/com/attila/server
-│ ├── AiTestGeneratorServerApplication.java
-│ ├── adapter/ai/OpenAiTestGenerationService.java
-│ ├── config/RateLimitFilter.java
-│ ├── core/TestGenerationService.java
-│ ├── exception/GlobalExceptionHandler.java
-│ ├── exception/InvalidApiSpecException.java
-│ └── web
-│ ├── TestGenerationController.java
-│ └── dto/
-│ ├── ApiSpecRequest.java
-│ └── GeneratedTestResponse.java
-│ └── resources/application.yml
+│   ├── pom.xml
+│   ├── src/main/java/com/attila/server
+│   │   ├── AiTestGeneratorServerApplication.java
+│   │   ├── adapter/ai
+│   │   │   └── OpenAiTestGenerationService.java
+│   │   ├── config
+│   │   │   └── RateLimitFilter.java
+│   │   ├── core
+│   │   │   └── TestGenerationService.java
+│   │   ├── exception
+│   │   │   ├── GlobalExceptionHandler.java
+│   │   │   └── InvalidApiSpecException.java
+│   │   └── web
+│   │       ├── TestGenerationController.java
+│   │       └── dto
+│   │           ├── ApiSpecRequest.java
+│   │           └── GeneratedTestResponse.java
+│   └── resources
+│       └── application.yml
 ├── cli
-│ ├── pom.xml
-│ └── src/main/java/com/attila/cli
-│ └── AiTestGeneratorCli.java
+│   ├── pom.xml
+│   └── src/main/java/com/attila/cli
+│       └── AiTestGeneratorCli.java
 └── samples
-└── payment-api.yaml
+    └── payment-api.yaml
+```
 
 ## 🚦 Quick Start
 
