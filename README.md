@@ -223,11 +223,3 @@ MIT License © Attila Grynaeus, 2025
 **Happy AI powered test generation!**
 
 ---
-
-### Improvements & Fixes Made
-
-* Unified section titles and emoji usage for consistency
-* Clarified that the Maven plugin is on the roadmap (not already available)
-* Re phrased example test names for readability
-* Added explicit mention of Spring Boot version 3.3.0 rather than a moving target
-* Ensured all bullets use parallel grammar (verb + object) for easier scanning
